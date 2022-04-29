@@ -65,12 +65,9 @@ class enviarMensagens:
     time.sleep(int(tempo)) 
 
 
-#dominios_ips = ['google.com.br', 'www.google.com.br', 'minhacasa.edu.br']
-#for i in dominios_ips:
-#  resultado = enviarMensagens(i)
-#  resultado.verificar_servidor(80)
-#  resultado.verificar_portas()
-#  resultado.realizar_ping()
-
-resultado = enviarMensagens('minhacasa.edu.br')
-resultado.realizar_ping()
+dominios_ips = ['google.com.br', 'www.google.com.br', 'minhacasa.edu.br']
+for i in dominios_ips:
+  resultado = enviarMensagens(i)
+  resultado.verificar_servidor(80)
+  resultado.verificar_portas()
+  resultado.realizar_ping()

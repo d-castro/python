@@ -1,0 +1,28 @@
+1. Crie uma classe enviarMensagens que tenha como variável 
+padrão para inicialização a mensagem (Deve estar no __init__)
+
+
+a classe deve ter um método enviar email com parâmetros email e titulo 
+e estes serão usados na biblioteca de envio de email
+Use a biblioteca smtplib
+
+2. Crie uma classe com os seguintes métodos:
+ 
+
+verificar_servidor (Use o socket) como parâmetro, 
+o método usa o ip/dominio e a porta, deve salvar em um arquivo csv dia e hora 
+e o resultado ( se conseguiu ou não), por fim, deve enviar email caso tenha dado errado.
+
+verificar_portas (Use o nmap) como parâmetro, 
+insira o dominio para teste e o resultado deve ser salvo em um arquivo csv para analises
+
+realizar_ping (use uma lib de ping de sua preferência) 
+como parâmetro entre o ip/domínio e salve o resultado em um arquivo csv, 
+caso tenha erro no ping, envie email informando o erro, o dia e hora do ocorrido.
+
+
+**ps.: os dados não podem ser apagados e sim inseridos ao final do arquivo**
+
+Rode o programa, verificando o servidor, 
+as portas abertas e vendo o ping com o seguintes 
+IP´s/DOminos dominios_ips = ['186.202.153.153', 'www.google.com.br', 'minhacasa.edu.br']
